@@ -114,11 +114,11 @@ class SocialAdventureTracker:
         )
 
         if adventure_count >= 10:
-            print(f"🎖️ Congrats {user}, you've earned the 'Adventurer' badge!")
+            print(f"Congrats {user}, you've earned the 'Adventurer' badge!")
         if adventure_count >= 20:
-            print(f"🏆 Wow {user}, you're an 'Explorer' now!")
+            print(f"Wow {user}, you're an 'Explorer' now!")
         if adventure_count >= 50:
-            print(f"🌍 Ultimate Traveler Badge Unlocked!")
+            print(f"Ultimate Traveler Badge Unlocked!")
 
 
 def main():
@@ -150,7 +150,7 @@ def main():
             user = input("Enter your name to find your top adventure buddies: ")
             top_buddies = tracker.get_top_adventure_buddies(user)
             if top_buddies:
-                print(f"🏅 Top 3 adventure buddies for {user}: {top_buddies}")
+                print(f"Top 3 adventure buddies for {user}: {top_buddies}")
 
         elif choice == '3':
             date = input("Enter the date (YYYY-MM-DD) to view adventure history: ")
